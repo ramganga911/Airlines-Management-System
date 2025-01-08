@@ -1,8 +1,5 @@
 # Airline Management System
 
-![Alt text](airlines_management_system_ER model.png)
-
-
 ## 1. Project Overview
 
 ### Objective
