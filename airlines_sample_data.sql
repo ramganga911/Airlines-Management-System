@@ -1,0 +1,63 @@
+-- Step 16: Insert sample airplane data
+INSERT INTO AIRPLANESINFO VALUES('AIRBUS360',10000,500,30);
+INSERT INTO AIRPLANESINFO VALUES('BOEING778',15000,600,45);
+
+-- Step 17: Insert sample airplane details
+INSERT INTO AIRPLANES VALUES(1,'BOEING778',0);
+INSERT INTO AIRPLANES VALUES(4,'BOEING778',1);
+INSERT INTO AIRPLANES VALUES(6,'AIRBUS360',0);
+
+-- Step 18: Insert airport location data
+INSERT INTO AIRPORTSINFO_LOC VALUES ('Delhi', 1, 100);
+INSERT INTO AIRPORTSINFO_LOC VALUES('Los Angeles', 2, 200);
+INSERT INTO AIRPORTSINFO_LOC VALUES('New York', 3, 300);
+INSERT INTO AIRPORTSINFO_LOC VALUES('London ', 4, 400);
+INSERT INTO AIRPORTSINFO_LOC VALUES('Dubai ', 5, 500);
+
+-- Step 19: Insert airport name and location data
+INSERT INTO AIRPORTSINFO_NAME VALUES ('IGI','Delhi' );
+INSERT INTO AIRPORTSINFO_NAME VALUES('Los Angeles','Los Angeles');
+INSERT INTO AIRPORTSINFO_NAME VALUES('LaGuardia','New York');
+INSERT INTO AIRPORTSINFO_NAME VALUES('Heathrow','London ');
+
+-- Step 20: Insert airport ID and name data
+INSERT INTO AIRPORTSINFO_ID VALUES (1,'IGI');
+INSERT INTO AIRPORTSINFO_ID VALUES(2,'Los Angeles');
+INSERT INTO AIRPORTSINFO_ID VALUES(3,'LaGuardia');
+INSERT INTO AIRPORTSINFO_ID VALUES(4,'Heathrow');
+INSERT INTO AIRPORTSINFO_ID VALUES(5,'Dubai International');
+
+-- Step 21: Insert salary data for airport staff
+INSERT INTO SALARY VALUES ('Engineer','Delhi', 100000);
+INSERT INTO SALARY VALUES ('Receptionist','Delhi', 78000);
+INSERT INTO SALARY VALUES('Ground Worker','Los Angeles', 20000);
+INSERT INTO SALARY VALUES('Pilot','New York', 331000);
+INSERT INTO SALARY VALUES('Hostess','London ',40012);
+
+-- Step 22: Insert customer data
+INSERT INTO CUSTOMER VALUES (1,'Manpreet','manpreet@gmail.com',6);
+INSERT INTO CUSTOMER VALUES (2,'Ankit','ankit@gmail.com',1);
+INSERT INTO CUSTOMER VALUES(3,'Nilesh','nilesh@gmail.com',4);
+INSERT INTO CUSTOMER VALUES(4,'Prateek','prateek@gmail.com', 6);
+
+-- Step 23: Insert employee data
+INSERT INTO EMP VALUES (1,'Manish Singh','manish@gmail.com','Engineer','Delhi', '1995-05-03');
+INSERT INTO EMP VALUES (2,'Piyush Singh','piyush@gmail.com','Receptionist','Delhi', '2005-11-01');
+INSERT INTO EMP VALUES(3,'Raju','raju@gmail.com','Ground Worker','Los Angeles', '2007-11-02');
+INSERT INTO EMP VALUES(4,'Prateek','prateek@gmail.com','Pilot','New York', '2012-02-04');
+
+-- Step 24: Insert flight data
+INSERT INTO FLIGHT VALUES (1,3,1,5,LOCALTIMESTAMP(2));
+INSERT INTO FLIGHT VALUES(2,1,2,4,LOCALTIMESTAMP(2));
+
+-- Step 25: Insert employee and flight assignments
+INSERT INTO FLIGHTINFO_EMP VALUES(1,2);
+INSERT INTO FLIGHTINFO_EMP VALUES(1,3);
+INSERT INTO FLIGHTINFO_EMP VALUES(1,4);
+INSERT INTO FLIGHTINFO_EMP VALUES(2,1);
+INSERT INTO FLIGHTINFO_EMP VALUES(2,4);
+
+-- Step 26: Insert customer-flight relationships
+INSERT INTO FLIGHTINFO_CUSTOMER (C_ID, F_ID) VALUES (4, 1);
+INSERT INTO FLIGHTINFO_CUSTOMER (C_ID, F_ID) VALUES (1, 2);
+INSERT INTO FLIGHTINFO_CUSTOMER (C_ID, F_ID) VALUES (4, 2);
