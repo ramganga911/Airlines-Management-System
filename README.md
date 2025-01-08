@@ -1,6 +1,6 @@
 # Airline Management System
 
-![airlines_management_system_ER model.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/adf2da1b-4a12-4013-a7de-e08bce8dd678/38c54d54-6981-458c-b0da-7f3585023b92/airlines_management_system_ER_model.png)
+
 
 ## 1. Project Overview
 
